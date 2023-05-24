@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="png" href="/img/icons/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Onson Mail">
+    <meta property="og:title" content="Onson Mail">
+    <meta property="og:description" content="Onson Mail">
+    <meta name="keywords" content="Onson Mail">
+    <!-- <link id="theme-css" rel="stylesheet" type="text/css" href="/themes/lara-dark-indigo/theme.css"> -->
+    <title>Onson Mail</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      const link = document.createElement('link')
+      link.id = 'theme-css'
+      link.rel = 'stylesheet'
+      link.type = 'text/css'
+      link.href = false ? "/themes/lara-dark-indigo/theme.css" : "/themes/lara-light-indigo/theme.css"
+      document.head.appendChild(link)
+    </script>
+  </body>
+</html>

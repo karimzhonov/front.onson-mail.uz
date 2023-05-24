@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  onson_front:
+    container_name: onson_front
+    build: .
+    ports:
+      - 3000:3000
+    command: sh -c "npm run serve"
+    restart: always
+    env_file:
+      - ./.env
+    volumes:
+      - ./:/app/
+
