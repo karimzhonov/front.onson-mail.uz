@@ -113,15 +113,14 @@ export default {
 
 <template>
   <div class="layout-topbar d-flex justify-content-between">
-
     <div to="/" class="layout-topbar-logo">
+      <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle()">
+        <i class="pi pi-bars"></i>
+      </button>
       <a style="color: var(--surface-900);" href="/" class="text-decoration-none">
         <img src="/img/icons/favicon.png" alt="logo" />
         <span>Onson Mail</span>
       </a>
-      <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle()">
-        <i class="pi pi-bars"></i>
-      </button>
     </div>
 
     <button class="p-link layout-topbar-menu-button layout-topbar-button ml-2" @click="onTopBarMenuButton()">

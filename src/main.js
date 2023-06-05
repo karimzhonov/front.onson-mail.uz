@@ -114,13 +114,8 @@ import { faKitMedical, faPerson, faBriefcase, faGraduationCap, faWallet, faHands
 faBuildingWheat, faChartLine, faUsersGear, faSchool, faChildReaching, faTablets, faHospital, faCartShopping, faBars, faUsers, faUser, faBus
 } from '@fortawesome/free-solid-svg-icons'
 import {faFaceSmile, faFaceFrown, faFaceMeh} from "@fortawesome/free-regular-svg-icons"
-library.add(
-  faKitMedical, faPerson, faBriefcase, faGraduationCap, 
-  faWallet, faHandsHoldingChild, faShieldHalved, faBuildingWheat, 
-  faChartLine, faFaceSmile, faFaceFrown, faFaceMeh, faUsersGear,
-  faSchool, faChildReaching, faTablets, faHospital, faCartShopping,
-  faBars, faUser, faUsers, faBus
-  )
+import {faGoogle} from "@fortawesome/free-brands-svg-icons"
+library.add(faGoogle)
 
 export const app = createApp(App);
 

@@ -8,6 +8,83 @@ $gutter: 1rem; //for primeflex grid system
 @import 'primeflex/primeflex.scss';
 @import 'primeicons/primeicons.css';
 @import 'leaflet/dist/leaflet.css';
+
+$color__primary: #445065;
+$color__secondary: #dcdee3;
+$color__instabug: #002276;
+
+$color__white: #fff;
+
+$color__gray--light: #b9b9b9;
+$color__gray--dark: #5e5e5e;
+
+$color__links: #09f;
+$color__warning: #f24220;
+
+@mixin customBorder($backgroundColor, $borderColor) {
+  background-color: $backgroundColor;
+  border: 1px solid $borderColor;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 43.75em) /*700px*/ {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 25em) /*1100px*/ {
+  html {
+    font-size: 37.5%;
+  }
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.heading--1 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  color: #445065;
+}
+.heading--3 {
+  font-weight: 900;
+  color: #445065;
+  font-size: 1.5rem;
+}
+
+.u-text--center {
+  text-align: center;
+}
+.u-margin--1x {
+  margin: 0 1rem;
+}
+.u-margin--2x {
+  margin: 1rem 0;
+}
+
 .speedometer-label {
   color: #000000 !important;
 }
